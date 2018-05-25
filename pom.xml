@@ -17,6 +17,8 @@
         <jsp.version>2.2</jsp.version>
         <jstl.version>1.2</jstl.version>
         <servlet.version>3.1.0</servlet.version>
+        <junit.version>LATEST</junit.version>
+        <slf4j.version>LATEST</slf4j.version>
 
         <!-- Spring -->
         <spring-framework.version>4.2.4.RELEASE</spring-framework.version>
@@ -46,6 +48,11 @@
             <artifactId>spring-webmvc</artifactId>
         </dependency>
 
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-jdbc</artifactId>
+        </dependency>
+
         <!-- Other Servlet Web dependencies -->
         <dependency>
             <groupId>javax.servlet</groupId>
@@ -67,6 +74,24 @@
             <scope>provided</scope>
         </dependency>
 
+        <dependency>
+            <groupId>org.hsqldb</groupId>
+            <artifactId>hsqldb</artifactId>
+            <version>2.3.3</version>
+        </dependency>
+
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>${junit.version}</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>${slf4j.version}</version>
+        </dependency>
     </dependencies>
     <!--http://startbootstrap.com/template-overviews/modern-business/  this is theme-->
 
@@ -86,6 +111,12 @@
                 </configuration>
             </plugin>
         </plugins>
+
+        <testResources>
+            <testResource>
+                <directory>src/main/webapp/WEB-INF/config</directory>
+            </testResource>
+        </testResources>
     </build>
 
 </project>

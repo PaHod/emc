@@ -12,5 +12,7 @@
 </head>
 <body>
     <h1>Error Page</h1>
+    <a href="/jdbc">JDBC</a>
+
 </body>
 </html>

@@ -6,10 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="emc" />
         <module name="emcclient" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="emc" target="1.8" />
       <module name="emc-server" target="1.8" />
       <module name="emcclient" target="1.8" />
     </bytecodeTargetLevel>

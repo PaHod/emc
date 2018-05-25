@@ -13,5 +13,6 @@
   <body>
   <H1>Index jsp</H1>
   $END$
+  <a href="/jdbc">JDBC</a>
   </body>
 </html>
